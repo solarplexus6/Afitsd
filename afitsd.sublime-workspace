@@ -1,0 +1,326 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fu",
+				"function	function"
+			],
+			[
+				"emp",
+				"emptyCells"
+			],
+			[
+				"em",
+				"emptyNghb"
+			],
+			[
+				"seq",
+				"sequencer"
+			],
+			[
+				"go",
+				"gofAutomaton"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ci",
+				"cities"
+			],
+			[
+				"for",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 58.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"ssxml",
+				"Set Syntax: XML"
+			],
+			[
+				"sslu",
+				"Set Syntax: Lua"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/Projects/Afitsd/afitsd.sublime-project",
+		"/D/BFG/Steam/steamapps/common/Rocksmith/Rocksmith.ini",
+		"/D/Szaher Maher/The Blind Side (2009)/The.Blind.Side.2009.720p.BluRay.x264.YIFY.srt",
+		"/D/ii.uni/python bejbe/lista9-10.py",
+		"/D/ii.uni/python bejbe/lista7zad2.py",
+		"/D/ii.uni/python bejbe/lista8zad3.py",
+		"/D/ii.uni/python bejbe/lista2.py",
+		"/D/ii.uni/python bejbe/lista3.py",
+		"/D/ii.uni/python bejbe/lista4.py",
+		"/D/ii.uni/python bejbe/lista1.py",
+		"/C/sudo/Sublime Text 2/Data/Packages/SML (Standard ML)/README.md",
+		"/D/Projects/JojoMobile/Develop/Apps/PlotekApp/PlotekShared/Consts/UrlConsts.cs",
+		"/D/Projects/JojoMobile/Develop/Apps/PlotekApp/PlotekShared/Services/ServiceManager.cs",
+		"/D/BFG/GOG Games/Fallout 2/fallout2.cfg",
+		"/C/Users/solarplexus/Documents/IISExpress/config/applicationhost.config",
+		"/D/Dream/Software/IK Multimedia AmpliTube 3 v3.9 UNLOCKED WiN - R2R [deepstatus]/r2r-0344/R2R.nfo",
+		"/D/BFG/Fallout 2/fallout2.cfg",
+		"/D/BFG/Steam/steamapps/common/Burnout(TM) Paradise The Ultimate Box/x360ce.ini",
+		"/D/Projects/JojoMobile/Workwork/src/GoogleAdMobAdsSDKWindowsPhone7-4.0.4/README",
+		"/D/Projects/Euterpea/Euterpea/Examples/SoundCheck.hs",
+		"/D/Projects/Euterpea/Euterpea/Examples/EuterpeaExamples.lhs",
+		"/D/Projects/ImgProcProject/README.md",
+		"/D/Projects/ImgProcProject/READM.md",
+		"/D/BFG/GOG Games/Broken Sword - Shadow of the Templars/sword1.ini",
+		"/C/Users/solarplexus/Downloads/SiteSpecific.css",
+		"/C/Users/solarplexus/Downloads/Site.css",
+		"/C/sudo/Sublime Text 2/Data/Packages/User/Preferences.sublime-settings",
+		"/C/Users/solarplexus/Documents/ii.uni/funkcyjne/gof_project/gofEngine.ml",
+		"/C/Users/solarplexus/Documents/ii.uni/node.js/hello.js",
+		"/C/Users/solarplexus/Documents/ii.uni/haskell/sandbox.hs",
+		"/C/Users/solarplexus/Documents/ii.uni/elm/elm_haskell_dif.elm",
+		"/C/Users/solarplexus/Documents/ii.uni/haskell/gof.hs",
+		"/C/Users/solarplexus/Documents/ii.uni/node.js/foo/package.json",
+		"/D/ii.uni/po/src/luacv/matrix.lua",
+		"/C/Users/solarplexus/Documents/ii.uni/lua/bst_classic.lua",
+		"/C/Users/solarplexus/Documents/ii.uni/haskell/aisd.hs",
+		"/C/Users/solarplexus/Documents/ii.uni/lua/algorithms.lua",
+		"/D/sudo/gimp-sharp-0.18/lib/gimp-sharp.dll.config",
+		"/D/sudo/gimp-sharp-0.18/plug-ins/AverageBlur/AverageBlur.cs",
+		"/D/sudo/gimp-sharp-0.18/plug-ins/AverageBlur/Makefile.in",
+		"/D/sudo/gimp-sharp-0.18/plug-ins/AverageBlur/Makefile.am",
+		"/D/sudo/gimp-sharp-0.18/configure",
+		"/D/sudo/gimp-sharp-0.18/Makefile.in",
+		"/D/sudo/gimp-sharp-0.18/install-sh",
+		"/D/sudo/gimp-sharp-0.18/INSTALL",
+		"/D/Projects/po/dft.lua",
+		"/D/Projects/po/README.md",
+		"/D/ii.uni/po/src/luacv/squares.lua",
+		"/D/ii.uni/po/src/luacv/dft.lua",
+		"/D/Projects/po/prac4fft.bat",
+		"/D/sudo/ZeroBraneStudioEduPack-0.36-win32/cfg/scheme-picker.lua",
+		"/D/sudo/ZeroBraneStudioEduPack-0.36-win32/cfg/tomorrow.lua",
+		"/D/Projects/po/.gitignore",
+		"/D/tmp/.gitignore",
+		"/D/ii.uni/prog/bisim/graphs/BranchS.graph",
+		"/D/ii.uni/lua/numlua-binaries-win32/lua/numlua/spfun.lua",
+		"/D/ii.uni/lua/numlua-binaries-win32/lua/numlua/rng.lua",
+		"/D/ii.uni/lua/numlua-binaries-win32/lua/numlua/matrix.lua",
+		"/D/ii.uni/lua/numlua-binaries-win32/lua/numlua/complex.lua",
+		"/D/ii.uni/lua/numlua-binaries-win32/lua/numlua/init.lua",
+		"/D/Projects/lib/jflowplus-download/scripts/jflow.plus.js",
+		"/D/Projects/lib/jflowplus-download/index.html",
+		"/D/Projects/lib/jflowplus-download/styles/style.css",
+		"/C/$WINDOWS.~BT/Sources/Panther/setupact.log",
+		"/C/$WINDOWS.~BT/Sources/Panther/setuperr.log",
+		"/C/$WINDOWS.~BT/Sources/Rollback/setuperr.log",
+		"/C/$WINDOWS.~BT/Sources/Rollback/setupact.log",
+		"/D/Projects/Samples/VariableSizedGroupedGridView_DP7/Sample_VariableSizedWrapGrid/Application1/GroupedItemsPage.xaml",
+		"/D/Projects/Samples/VariableSizedGroupedGridView_DP7/Sample_VariableSizedWrapGrid/Application1/ItemDetailPage.xaml",
+		"/D/Projects/Web Audio - Tone Playing Experiment_files/main.js",
+		"/D/Projects/synthoflife/public/main.html",
+		"/D/Projects/synthoflife/elm/main.html",
+		"/C/sudo/Sublime Text 2/Data/Packages/LaTeXTools/README.markdown",
+		"/D/Projects/sem-Rx/prezentacja/rx.tex",
+		"/C/Users/solarplexus/Documents/ii.uni/matlab/spacial-domain-toolbox/estimate_displacement.m",
+		"/C/Users/solarplexus/Documents/ii.uni/synteza/faust/my_src/mk1",
+		"/D/sudo/linux-shared/webaudio.html",
+		"/D/Projects/faust-0.9.58/examples/harpe.dsp",
+		"/C/Users/solarplexus/Documents/ii.uni/synteza/faudiostream/architecture/music.lib",
+		"/D/sudo/opencv/README",
+		"/C/Users/solarplexus/Projects/Junkyard/Junkyard/Junkyard/Junkyard/Junkyard.csproj",
+		"/C/Users/solarplexus/Projects/Junkyard/README.md",
+		"/C/sudo/MinGW/msys/1.0/msys2.bat",
+		"/C/Users/solarplexus/Projects/faust-0.9.58/Makefile",
+		"/C/Users/solarplexus/Projects/faust-0.9.58/syntax-highlighting/README",
+		"/C/Users/solarplexus/Documents/ii.uni/synteza/faudiostream/WHATSNEW",
+		"//srvdata/Smietnik/dev/resharperLayout.xml",
+		"/D/Emu/mame0147b_64bit/mGalaxy.exe.config",
+		"/C/Users/solarplexus/Projects/synthoflife/elm/elm_haskell_dif.elm",
+		"/C/Users/solarplexus/Projects/hello-elm/Pong.elm",
+		"/C/Users/solarplexus/Projects/elm-lang.org/public/blog/announce/version-0.5.0.elm",
+		"/C/Users/solarplexus/Projects/synthoflife/elm/test.elm",
+		"/C/Users/solarplexus/Projects/synthoflife/elm/main.elm",
+		"/C/Users/solarplexus/Projects/synthoflife/.gitignore",
+		"/C/Users/solarplexus/Projects/Elm/core-elm/Dict.elm",
+		"/C/Users/solarplexus/Projects/elm-lang.org/public/docs/Data/Set.elm",
+		"/C/Users/solarplexus/Projects/Elm/core-elm/Set.elm",
+		"/C/Users/solarplexus/Projects/README.md",
+		"/D/BFG/Steam/steamapps/common/dota 2 beta/dota/cfg/config.cfg",
+		"/D/BFG/Steam/steamapps/common/dota 2 beta/dota/resource/sourcescheme.res",
+		"/D/BFG/Steam/steamapps/common/dota 2 beta/dota/pak01_dir.vpk",
+		"/C/Tmp/Web.config",
+		"/C/Users/solarplexus/Projects/elm-lang.org/.gitignore",
+		"/C/Users/solarplexus/Projects/elm-lang.org/compile.bat",
+		"/C/Users/solarplexus/Documents/ii.uni/funkcyjne/gof_project/gof.ml",
+		"/C/Users/solarplexus/Projects/ETO/reports/zestaw5_zastosowanie_XP.txt",
+		"/C/Users/solarplexus/Projects/ETO/reports/zestaw5_czasy.txt",
+		"/C/Users/solarplexus/Projects/Elm/Examples/elm-yesod/Main.hs",
+		"/C/Users/solarplexus/Projects/ETO/reports/rl_29-10-2012_raport.txt",
+		"/C/Users/solarplexus/Projects/hello-elm/main.elm",
+		"/C/sudo/Sublime Text 2/Data/Packages/Haskell/Haskell.tmLanguage",
+		"/C/Users/solarplexus/Projects/elm-lang.org/server/ElmToHtml.hs",
+		"/C/Users/solarplexus/Projects/elm-lang.org/public/Elm.elm",
+		"/C/Users/solarplexus/Documents/ii.uni/neuronowe/inlineMy.m",
+		"/C/Users/solarplexus/Documents/ii.uni/neuronowe/showFaces.m",
+		"/C/Users/solarplexus/Documents/ii.uni/node.js/foo/app.js",
+		"/C/Users/solarplexus/Documents/ii.uni/aisd/dsn_0.95-6/read.me",
+		"/D/BFG/Steam/steamapps/669031012/counter-strike/cstrike/userconfig.cfg"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\"f\": ",
+			"\"f\": .*",
+			"button",
+			"csc",
+			"mono",
+			"exe",
+			"bin",
+			"navbar",
+			"failed",
+			"Współbieżność",
+			"Reactive",
+			";",
+			"-1",
+			"console",
+			"  ",
+			"   "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"mnuNawigacjaFallback",
+			",",
+			"0-1",
+			" ",
+			"",
+			" ",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

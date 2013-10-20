@@ -1,7 +1,5 @@
 (* zajecia 13.10.2013 *)
 
-infix  3 $     fun f $ y = f y;
-
 (* Zad 1 *)
 
 fun sublist (x::xs) =
