@@ -26,14 +26,26 @@ fun cbt 0 label = label & (%, %)
                      label & (subtree, subtree)
                   end;
 
+fun create2 0 label = let
+                        val empty = %
+                      in
+                        (label & (empty, empty), empty)
+                      end
+  | create2 1 label = let
+                        val (t1, t2) = (create2 0 label)
+                      in
+                        (label & (t1, t2), t1)
+                      end
+  | create2 n label = let
+    val m = (n - 1) div 2
+    val (subM1, subM) = create2 m label
+  in
+    if (n - 1) mod 2 = 0 then (label & (subM1, subM), label & (subM, subM)) else (label & (subM1, subM1), label & (subM1, subM))
+  end;
+
 (*bez ujemnych n*)
 (*bbt: int -> int -> tree*)
-fun bt 1 label = label & (%, %)
-  | bt n label = let 
-                    val subtree = bt (n - 1) label 
-                  in
-                     label & (subtree, subtree)
-                  end;
+fun bt n label = #2 (create2 n label);
 
 (* Source code from
  *   Purely Functional Data Structures

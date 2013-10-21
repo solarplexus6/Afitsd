@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"from",
+				"fromList"
+			],
+			[
+				"mer",
+				"mergePairs"
+			],
+			[
+				"merge",
+				"mergePairs"
+			],
+			[
+				"le",
+				"LeftistHeap"
+			],
+			[
+				"Heap",
+				"HEAP"
+			],
+			[
 				"fu",
 				"function	function"
 			],
@@ -39,6 +59,48 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "list2.sml",
+			"settings":
+			{
+				"buffer_size": 4930,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "base.sml",
+			"settings":
+			{
+				"buffer_size": 265,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/D/ii.uni/funkcyjne/pfds-sml/chp3.sml",
+			"settings":
+			{
+				"buffer_size": 4238,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "list1.sml",
+			"settings":
+			{
+				"buffer_size": 1761,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Standard ML of New Jersey v110.74 [built: Tue Jan 31 16:19:10 2012]\n- \n- ;\n- \n- \n- \n- 2 + 3\n= ;\nval it = 5 : int\n- ;\n- use \"D:\\Projects\\Afitsd\";\nstdIn:9.5-9.9 Error: unclosed string\n- use \"D:\\Projects\\Afitsd\" ;\nstdIn:4.1-6.3 Error: unclosed string\n- use \"D:\\\\Projects\\\\Afitsd\" ;\n[opening D:\\Projects\\Afitsd]\n[use failed: Io: openIn failed on \"D:\\Projects\\Afitsd\", Win32TextPrimIO:openRd: failed]\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/interact.sml:24.14-24.28\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:102.7-109.8 Error: right-hand-side of clause doesn't agree with function result type [tycon mismatch]\n  expression:  Heap list\n  result type:  Heap\n  in declaration:\n    fromList =\n      (fn nil => empty\n        | xs => let val <binding> in mergePairs <exp> end)\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nsignature ORDERED =\n  sig\n    type T\n    val leq : T * T -> bool\n  end\nsignature HEAP =\n  sig\n    structure Elem :\n      sig\n        type T\n        val leq : T * T -> bool\n      end\n    type Heap\n    val empty : Heap\n    val isEmpty : Heap -> bool\n    val insert : Elem.T * Heap -> Heap\n    val merge : Heap * Heap -> Heap\n    val findMin : Heap -> Elem.T\n    val deleteMin : Heap -> Heap\n    val fromList : Elem.T list -> Heap\n  end\nfunctor LeftistHeap(Element: sig\n                               type T\n                               val leq : T * T -> bool\n                             end) :\n                   sig\n                     structure Elem : <sig>\n                     type Heap\n                     val empty : Heap\n                     val isEmpty : Heap -> bool\n                     val insert : Elem.T * Heap -> Heap\n                     val merge : Heap * Heap -> Heap\n                     val findMin : Heap -> Elem.T\n                     val deleteMin : Heap -> Heap\n                     val fromList : Elem.T list -> Heap\n                   end\nstructure Integers : ORDERED\nstructure lHeap : HEAP\nval it = () : unit\n- lHeap.fromList [23, 12, 56];\nval it = T (1,12,T (1,23,E,E),E) : lHeap.Heap\n- val testFun = fn hs => case hs of [_] => true | _ => false;\nval testFun = fn : 'a list -> bool\n- hs []\n= ;\nstdIn:12.1-12.3 Error: unbound variable or constructor: hs\n- testFun []\n= ;\nval it = false : bool\n- testFun [1];\nval it = true : bool\n- testFun [1,2];\nval it = false : bool\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\nD:\\Projects\\Afitsd\\list2.sml:8.1 Error: syntax error: inserting  LET\nD:\\Projects\\Afitsd\\list2.sml:35.22-49.10 Error: syntax error: deleting  SEMICOLON SIGNATURE\nD:\\Projects\\Afitsd\\list2.sml:51.1-52.7 Error: syntax error: deleting  SIG TYPE\nD:\\Projects\\Afitsd\\list2.sml:55.1-57.10 Error: syntax error: deleting  END SIGNATURE\nD:\\Projects\\Afitsd\\list2.sml:58.1-59.12 Error: syntax error: deleting  SIG STRUCTURE\nD:\\Projects\\Afitsd\\list2.sml:61.3-63.6 Error: syntax error: deleting  TYPE ID VAL\nD:\\Projects\\Afitsd\\list2.sml:66.3-66.6 Error: syntax error: replacing  VAL with  EQUALOP\nD:\\Projects\\Afitsd\\list2.sml:69.3-69.6 Error: syntax error: replacing  VAL with  EQUALOP\nD:\\Projects\\Afitsd\\list2.sml:70.3-70.6 Error: syntax error: replacing  VAL with  ARROW\nD:\\Projects\\Afitsd\\list2.sml:73.1-77.8 Error: syntax error: deleting  END FUNCTOR\nD:\\Projects\\Afitsd\\list2.sml:77.9 Error: syntax error: inserting  AS\nD:\\Projects\\Afitsd\\list2.sml:78.1-79.12 Error: syntax error: deleting  STRUCT STRUCTURE\nD:\\Projects\\Afitsd\\list2.sml:114.1-116.10 Error: syntax error: deleting  END STRUCTURE\nD:\\Projects\\Afitsd\\list2.sml:116.30-117.7 Error: syntax error: deleting  EQUALOP STRUCT\nD:\\Projects\\Afitsd\\list2.sml:121.1-123.10 Error: syntax error: deleting  END STRUCTURE\nD:\\Projects\\Afitsd\\list2.sml:123.1 Error: syntax error found at EOF\n\nuncaught exception Compile [Compile: \"syntax error\"]\n  raised at: ../compiler/Parse/main/smlfile.sml:15.24-15.46\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nbase.sml:4.5 Error: syntax error: inserting  EQUALOP\n\nuncaught exception Compile [Compile: \"syntax error\"]\n  raised at: ../compiler/Parse/main/smlfile.sml:15.24-15.46\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:110.7-112.49 Error: operator and operand don't agree [tycon mismatch]\n  operator domain: ('Z list -> 'Z) * 'Z list\n  operand:         ('Z list -> 'Z) * (Heap list -> Heap list)\n  in expression:\n    hd $ (until (fn <pat> => <exp>)) mergePairs\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:110.7-111.62 Error: operator and operand don't agree [tycon mismatch]\n  operator domain: ('Z list -> 'Z) * 'Z list\n  operand:         ('Z list -> 'Z) * (Heap list -> Heap list)\n  in expression:\n    hd $ (until (fn <pat> => <exp>)) mergePairs\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:110.7-110.109 Error: operator and operand don't agree [tycon mismatch]\n  operator domain: ('Z list -> 'Z) * 'Z list\n  operand:         ('Z list -> 'Z) * (Heap list -> Heap list)\n  in expression:\n    hd $ (until (fn <pat> => <exp>)) mergePairs\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nsignature ORDERED =\n  sig\n    type T\n    val leq : T * T -> bool\n  end\nsignature HEAP =\n  sig\n    structure Elem :\n      sig\n        type T\n        val leq : T * T -> bool\n      end\n    type Heap\n    val empty : Heap\n    val isEmpty : Heap -> bool\n    val insert : Elem.T * Heap -> Heap\n    val merge : Heap * Heap -> Heap\n    val findMin : Heap -> Elem.T\n    val deleteMin : Heap -> Heap\n    val fromList : Elem.T list -> Heap\n  end\nfunctor LeftistHeap(Element: sig\n                               type T\n                               val leq : T * T -> bool\n                             end) :\n                   sig\n                     structure Elem : <sig>\n                     type Heap\n                     val empty : Heap\n                     val isEmpty : Heap -> bool\n                     val insert : Elem.T * Heap -> Heap\n                     val merge : Heap * Heap -> Heap\n                     val findMin : Heap -> Elem.T\n                     val deleteMin : Heap -> Heap\n                     val fromList : Elem.T list -> Heap\n                   end\nstructure Integers : ORDERED\nstructure lHeap : HEAP\nval it = () : unit\n- lHeap.fromList [23, 12, 56];\nval it = T (2,12,T (1,23,E,E),T (1,56,E,E)) : lHeap.Heap\n- lHeap.fromList [23, 12, 56, 54, 21, 5, 87];\nval it = T (2,5,T (2,12,T #,T #),T (1,21,E,E)) : lHeap.Heap\n- lHeap.fromList [23, 12, 56, 54, 21, 5, 87, 78, 44];\nval it = T (2,5,T (2,12,T #,T #),T (1,21,T #,E)) : lHeap.Heap\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:147.90 Error: unbound variable or constructor: T\nD:\\Projects\\Afitsd\\list2.sml:147.102 Error: unbound variable or constructor: E\nD:\\Projects\\Afitsd\\list2.sml:147.99 Error: unbound variable or constructor: E\nD:\\Projects\\Afitsd\\list2.sml:114.9-149.4 Error: unmatched value specification: findMin\nD:\\Projects\\Afitsd\\list2.sml:114.9-149.4 Error: unmatched value specification: deleteMin\nD:\\Projects\\Afitsd\\list2.sml:159.19-159.42 Error: structure bHeap defined by partially applied functor\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:158.90 Error: unbound variable or constructor: T\nD:\\Projects\\Afitsd\\list2.sml:158.102 Error: unbound variable or constructor: E\nD:\\Projects\\Afitsd\\list2.sml:158.99 Error: unbound variable or constructor: E\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\" ;\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:158.11-158.109 Error: operator and operand don't agree [tycon mismatch]\n  operator domain: (Tree list list -> Tree list list) * Tree list list\n  operand:         (Tree list list -> Tree list list) * Tree list\n  in expression:\n    (until (fn <pat> => <exp>)) mergePairs $ (map (fn <pat> => <exp>)) xs\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\";\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:158.11-158.109 Error: operator and operand don't agree [tycon mismatch]\n  operator domain: (Tree list list -> Tree list list) * Tree list list\n  operand:         (Tree list list -> Tree list list) * Tree list\n  in expression:\n    (until (fn <pat> => <exp>)) mergePairs $ (map (fn <pat> => <exp>)) xs\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\";\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:158.91 Error: syntax error: inserting  LPAREN\nD:\\Projects\\Afitsd\\list2.sml:158.109 Error: syntax error: inserting  RPAREN\n\nuncaught exception Compile [Compile: \"syntax error\"]\n  raised at: ../compiler/Parse/main/smlfile.sml:15.24-15.46\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\";\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nsignature ORDERED =\n  sig\n    type T\n    val leq : T * T -> bool\n  end\nsignature HEAP =\n  sig\n    structure Elem :\n      sig\n        type T\n        val leq : T * T -> bool\n      end\n    type Heap\n    val empty : Heap\n    val isEmpty : Heap -> bool\n    val insert : Elem.T * Heap -> Heap\n    val merge : Heap * Heap -> Heap\n    val findMin : Heap -> Elem.T\n    val deleteMin : Heap -> Heap\n    val fromList : Elem.T list -> Heap\n  end\nfunctor LeftistHeap(Element: sig\n                               type T\n                               val leq : T * T -> bool\n                             end) :\n                   sig\n                     structure Elem : <sig>\n                     type Heap\n                     val empty : Heap\n                     val isEmpty : Heap -> bool\n                     val insert : Elem.T * Heap -> Heap\n                     val merge : Heap * Heap -> Heap\n                     val findMin : Heap -> Elem.T\n                     val deleteMin : Heap -> Heap\n                     val fromList : Elem.T list -> Heap\n                   end\nfunctor BinomialHeap(Element: sig\n                                type T\n                                val leq : T * T -> bool\n                              end) :\n                    sig\n                      structure Elem : <sig>\n                      type Heap\n                      val empty : Heap\n                      val isEmpty : Heap -> bool\n                      val insert : Elem.T * Heap -> Heap\n                      val merge : Heap * Heap -> Heap\n                      val findMin : Heap -> Elem.T\n                      val deleteMin : Heap -> Heap\n                      val fromList : Elem.T list -> Heap\n                    end\nstructure Integers : ORDERED\nstructure lHeap : HEAP\nstructure bHeap : HEAP\nval it = () : unit\n- bHeap.fromList [23, 12, 56, 54, 21, 5, 87, 78, 44];\nval it = [Node (0,44,[]),Node (3,5,[Node #,Node #,Node #])] : bHeap.Heap\n- foldl (fn (x, acc) => if Elem.leq (x, acc) then x else acc) (200000) [3, 2, 1];\nstdIn:23.26-23.34 Error: unbound structure: Elem in path Elem.leq\n- foldl (fn (x, acc) => if x <= acc then x else acc) (200000) [3, 2, 1];\nval it = 1 : int\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\";\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:154.62 Error: unbound variable or constructor: x\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\";\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nD:\\Projects\\Afitsd\\list2.sml:154.31-154.72 Error: types of if branches do not agree [tycon mismatch]\n  then branch: Tree\n  else branch: Element.T\n  in expression:\n    if Elem.leq (root t,acc) then t else acc\n\nuncaught exception Error\n  raised at: ../compiler/TopLevel/interact/evalloop.sml:66.19-66.27\n             ../compiler/TopLevel/interact/evalloop.sml:44.55\n             ../compiler/TopLevel/interact/evalloop.sml:296.17-296.20\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\";\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nsignature ORDERED =\n  sig\n    type T\n    val leq : T * T -> bool\n  end\nsignature HEAP =\n  sig\n    structure Elem :\n      sig\n        type T\n        val leq : T * T -> bool\n      end\n    type Heap\n    val empty : Heap\n    val isEmpty : Heap -> bool\n    val insert : Elem.T * Heap -> Heap\n    val merge : Heap * Heap -> Heap\n    val findMin : Heap -> Elem.T\n    val deleteMin : Heap -> Heap\n    val fromList : Elem.T list -> Heap\n  end\nfunctor LeftistHeap(Element: sig\n                               type T\n                               val leq : T * T -> bool\n                             end) :\n                   sig\n                     structure Elem : <sig>\n                     type Heap\n                     val empty : Heap\n                     val isEmpty : Heap -> bool\n                     val insert : Elem.T * Heap -> Heap\n                     val merge : Heap * Heap -> Heap\n                     val findMin : Heap -> Elem.T\n                     val deleteMin : Heap -> Heap\n                     val fromList : Elem.T list -> Heap\n                   end\nfunctor BinomialHeap(Element: sig\n                                type T\n                                val leq : T * T -> bool\n                              end) :\n                    sig\n                      structure Elem : <sig>\n                      type Heap\n                      val empty : Heap\n                      val isEmpty : Heap -> bool\n                      val insert : Elem.T * Heap -> Heap\n                      val merge : Heap * Heap -> Heap\n                      val findMin : Heap -> Elem.T\n                      val deleteMin : Heap -> Heap\n                      val fromList : Elem.T list -> Heap\n                    end\nstructure Integers : ORDERED\nstructure lHeap : HEAP\nstructure bHeap : HEAP\nval it = () : unit\n- val test = bHeap.fromList [23, 12, 56, 54, 21, 5, 87, 78, 44];\nval test = [Node (0,44,[]),Node (3,5,[Node #,Node #,Node #])] : bHeap.Heap\n- bHeap.findMin test;\nval it = 5 : Integers.T\n- bHeap.findMin' test;\nstdIn:27.1-27.15 Error: unbound variable or constructor: findMin' in path bHeap.findMin'\n- use \"D:\\\\Projects\\\\Afitsd\\\\list2.sml\";\n[opening D:\\Projects\\Afitsd\\list2.sml]\n[opening base.sml]\ninfix 3 $\nval $ = fn : ('a -> 'b) * 'a -> 'b\nval until = fn : ('a -> bool) -> ('a -> 'a) -> 'a -> 'a\nval it = () : unit\ndatatype tree = % | & of int * (tree * tree)\ninfix &\nval treeFold = fn : (int * 'a -> 'a) -> 'a -> tree -> 'a\nval flatten' = fn : tree -> int list\nval cbt = fn : int -> int -> tree\nval bt = fn : int -> int -> tree\nsignature ORDERED =\n  sig\n    type T\n    val leq : T * T -> bool\n  end\nsignature HEAP =\n  sig\n    structure Elem :\n      sig\n        type T\n        val leq : T * T -> bool\n      end\n    type Heap\n    val empty : Heap\n    val isEmpty : Heap -> bool\n    val insert : Elem.T * Heap -> Heap\n    val merge : Heap * Heap -> Heap\n    val findMin : Heap -> Elem.T\n    val deleteMin : Heap -> Heap\n    val fromList : Elem.T list -> Heap\n  end\nfunctor LeftistHeap(Element: sig\n                               type T\n                               val leq : T * T -> bool\n                             end) :\n                   sig\n                     structure Elem : <sig>\n                     type Heap\n                     val empty : Heap\n                     val isEmpty : Heap -> bool\n                     val insert : Elem.T * Heap -> Heap\n                     val merge : Heap * Heap -> Heap\n                     val findMin : Heap -> Elem.T\n                     val deleteMin : Heap -> Heap\n                     val fromList : Elem.T list -> Heap\n                   end\nfunctor BinomialHeap(Element: sig\n                                type T\n                                val leq : T * T -> bool\n                              end) :\n                    sig\n                      structure Elem : <sig>\n                      type Heap\n                      val empty : Heap\n                      val isEmpty : Heap -> bool\n                      val insert : Elem.T * Heap -> Heap\n                      val merge : Heap * Heap -> Heap\n                      val findMin : Heap -> Elem.T\n                      val deleteMin : Heap -> Heap\n                      val fromList : Elem.T list -> Heap\n                    end\nstructure Integers : ORDERED\nstructure lHeap : HEAP\nstructure bHeap : HEAP\nval testBHeap = [Node (0,44,[]),Node (3,5,[Node #,Node #,Node #])]\n  : bHeap.Heap\nval it = () : unit\n- bHeap.findMin test;\nstdIn:28.1-28.19 Error: operator and operand don't agree [tycon mismatch]\n  operator domain: bHeap.Heap\n  operand:         ?.bHeap.Heap\n  in expression:\n    bHeap.findMin test\n- bHeap.findMin testBHeap;\nval it = 5 : Integers.T\n- lHeap.fromList [23, 12, 56, 54, 21, 5, 87, 78, 44];\nval it = T (2,5,T (2,12,T #,T #),T (1,21,T #,E)) : lHeap.Heap\n- lHeap.fromList [2, 1];\nval it = T (1,1,T (1,2,E,E),E) : lHeap.Heap\n- ",
+			"settings":
+			{
+				"buffer_size": 24263,
+				"line_ending": "Windows",
+				"name": "*REPL* [sml]",
+				"scratch": true
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -46,6 +108,10 @@
 		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			],
 			[
 				"install",
 				"Package Control: Install Package"
@@ -84,6 +150,7 @@
 	},
 	"file_history":
 	[
+		"/D/ii.uni/funkcyjne/pfds-sml/README",
 		"/D/Projects/Afitsd/afitsd.sublime-project",
 		"/D/BFG/Steam/steamapps/common/Rocksmith/Rocksmith.ini",
 		"/D/Szaher Maher/The Blind Side (2009)/The.Blind.Side.2009.720p.BluRay.x264.YIFY.srt",
@@ -219,6 +286,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"expression",
+			"removeMinTree",
+			"findMin",
+			"LeftistHeap",
+			")",
+			"body2",
+			"pattern2",
+			"body1",
+			"pattern1",
+			"expression",
+			"until",
+			"expression",
+			"body",
+			"arguments",
 			"\"f\": ",
 			"\"f\": .*",
 			"button",
@@ -260,8 +341,177 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "list2.sml",
+					"settings":
+					{
+						"buffer_size": 4930,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4622,
+								4622
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SML (Standard ML)/sml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2351.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "base.sml",
+					"settings":
+					{
+						"buffer_size": 265,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/SML (Standard ML)/sml.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/ii.uni/funkcyjne/pfds-sml/chp3.sml",
+					"settings":
+					{
+						"buffer_size": 4238,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1702,
+								3018
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SML (Standard ML)/sml.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1305.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "list1.sml",
+					"settings":
+					{
+						"buffer_size": 1761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								41,
+								41
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SML (Standard ML)/sml.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"settings":
+					{
+						"buffer_size": 24263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24263,
+								24263
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"auto_indent": false,
+							"detect_indentation": false,
+							"gutter": false,
+							"history_arrows": true,
+							"indent_subsequent_lines": false,
+							"line_numbers": false,
+							"repl": true,
+							"repl_external_id": "sml",
+							"repl_id": "2886073c249e4b9bb19d5ff6e21898e3",
+							"repl_restart_args":
+							{
+								"cmd":
+								[
+									"sml"
+								],
+								"cwd": "$file_path",
+								"encoding": "utf8",
+								"external_id": "sml",
+								"syntax": "Packages/SML (Standard ML)/sml.tmLanguage",
+								"type": "subprocess"
+							},
+							"repl_sublime2": true,
+							"smart_indent": false,
+							"spell_check": false,
+							"syntax": "Packages/SML (Standard ML)/sml.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9311.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -282,6 +532,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -292,6 +548,7 @@
 		"rows":
 		[
 			0.0,
+			0.631810193322,
 			1.0
 		]
 	},
