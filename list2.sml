@@ -120,7 +120,7 @@ struct
         | mergePairs [x] = [x]
         | mergePairs [] = []            
     in
-      hd (until (fn hs => case hs of [_] => true | _ => false) mergePairs $ map (fn x => T (1, x, E, E)) xs)
+      hd (until (fn hs => case hs of [_] => true | _ => false) mergePairs \> map (fn x => T (1, x, E, E)) xs)
     end
 end
 
@@ -163,7 +163,7 @@ struct
   fun findMin [] = raise Empty
     | findMin [t] = root t
     | findMin ts =
-        foldl (fn (t, acc) => if Elem.leq (root t, acc) then root t else acc) (root $ hd ts) ts
+        foldl (fn (t, acc) => if Elem.leq (root t, acc) then root t else acc) (root \> hd ts) ts
 
   fun deleteMin ts =
         let val (Node (_, x, ts1), ts2) = removeMinTree ts
@@ -175,7 +175,7 @@ struct
         | mergePairs [x] = [x]
         | mergePairs [] = []            
     in
-      hd (until (fn hs => case hs of [_] => true | _ => false) mergePairs $ map (fn x => [Node (0, x, [])]) xs)
+      hd (until (fn hs => case hs of [_] => true | _ => false) mergePairs \> map (fn x => [Node (0, x, [])]) xs)
     end
 end
 

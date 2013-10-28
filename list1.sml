@@ -62,7 +62,7 @@ fun selectSort [] = []
             fun minBounded b r (z::zs) = if z > b andalso z < r then minBounded b z zs else minBounded b r zs
               | minBounded b r [] = r
         in
-            rev $ foldr (fn (_, (sorted as (currentMin::_))) => (minBounded currentMin max ls) :: sorted) [min] xs
+            rev \> foldr (fn (_, (sorted as (currentMin::_))) => (minBounded currentMin max ls) :: sorted) [min] xs
         end;
 
 selectSort [203, 3, 5, 12, 43, 59, 23];
